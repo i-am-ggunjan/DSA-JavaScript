@@ -1,0 +1,108 @@
+What is an Algorithm ?
+    An Algorithm is a set of well-defined instruction to solve a particular problem.
+
+Characteristic of an Algorithm :- 
+    1. Well-defined inputs and outputs.
+    2. Each step should be clear and unambiguous.
+    3. Language independent.
+
+Note :- One problem can be solved in many ways using different algorithm.
+Multiple algorithm exits for the same problem and there is no right solution. Different algorithm work well under different constraints.
+
+
+How to analyse which one algorithm is the most efficient algorithm ?
+There absolute running time of an algorithm cannot be predicted, since it depends on a number of factors.
+Factors are :- 
+    1. Programming language used to implements the algorithm.
+    2. The computer on which the program runs.
+    3. Other Programming running at the same time.
+    4. quality of the operating system.
+
+Keeping this point in mind, we can evaluate the performance of an algorithm in terms of its input size.
+
+The evaluation is of two types :-
+    1. Time Complexity :- Amount of time taken by algorithm to run, as a function of input size.
+    2. Space Complexity :- Amount of memory taken by an algorithm to run, as a function of input size.
+
+By evaluating against the input size, the analysis is not only machine independent but the comparison is also more appropriate.
+
+
+Note :-  1.If we need our algorithm to be very quick and has plenty of memory to work with, we don't need to worry about Space Complexity.
+2. If we have little memory to work with, we should pick a solution that is relatively slower but needs less space.
+
+
+
+
+How to represent Complexity? 
+We can represent complexity using Asymptotic notations.
+
+Asymptotic Notations :- Mathematical tools to represent time and space complexity.
+
+There are mainly three Asymptotic notations :-
+    1. Big-O Notation (O-notation) :- Worst case complexity
+    2. Omega-O Notation (Ω-notation) :- Best case complexity
+    3. Theta Notation (θ-notation) :- Average case complexity
+
+Note :- We are primarily concern about Big-O Notation.
+
+
+
+Big-O Time Complexity :- 
+    It describe the complexity of an algorithm using "Algebric terms".
+    It has two important characteristic :-
+        1. It is expressed in terms of input.
+        2. It focus on bigger picture without getting caught up using in the minute of details.
+    
+We find Big-O time complexity by :-  counting the number of a statement executes based on the input size.
+
+Note :- Most of the time, we can say Time Complexity is atleast linear in case of loop when it present in our algorithm.
+
+
+1. Big-O time complexity of Loop
+    If there are only one loop :- Time complexity is linear --- O(n)
+
+    If there are two loop :- Time complexity is quadratic --- O(n^2)
+
+    If there are three loop :- Time complexity is cubic --- O(n^3)
+
+    If input size is reduce by half in every iteration :- Time complexity is logarithmic --- O(logn)
+
+2. Big-O time complexity of Objects
+    If we want to insert or remove a property :- Time Complexity is constant --- O(1)
+
+    If we want to access a value for given key :- Time Complexity is constant --- O(1)
+
+    If we want to search for a value in an object :- Time complexity is linear --- O(n)
+
+    Time Complexity for some methods of Objects :-
+    Object.keys() :- O(n)
+    Object.values() :- O(n)
+    Object.entries() :- O(n)
+
+// Array are ordered while object not.
+// Array always maintain appropriate index anytime when we perform an operation.
+
+3. Big-O time complexity of Array
+    If we insert or remove an elements from the end of the array :- Time Complexity is constant --- O(1)
+
+    If we insert or remove an elements from the beginning of the array :- Time Complexity is linear --- O(n) - This is because the index has to be reset for every remaining elements in the array.
+
+    If we want to access an elements in the array :- Time Complexity is constant --- O(1)
+
+    If we want to search an elements in the array :- Time Complexity is linear --- O(n)
+    
+    Time Complexity for some methods of Array :-
+    push/pop --- O(1)
+    shift/unshift/concat/slice/splice --- O(n)
+    foreach/map/reduce/filter --- o(n)
+
+    Note :- callback function may also contain a for loop - In that scenario, time complexity become quadratic.
+
+
+Big-O Space Complexity :-
+    If the algorithm does not need extra memory or the memory needed does not depend on the input size, the state complexity is constant --- O(1) 
+    Eg :- Sorting Algorithm -- which sort within the array without utilizing additional arrays.
+
+    We can also have algorithm with linear space complexity where the extra space needed grows as the input size grows
+
+    We can also have a logarithmic space complexity in which case the extra space needed grows but not at the same rate as the input size.
