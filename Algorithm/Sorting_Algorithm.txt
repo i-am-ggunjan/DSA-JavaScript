@@ -24,3 +24,34 @@ In-place/Outplace technique :-
 
     Among the non-comparison based techniques discussed, all are outplaced techniques.
     Counting sort uses a counting array and bucket sort uses a hash table for sorting the array.
+
+
+Bubble sort :-
+    Bubble sort is a simple sorting algorithm. The algorithm starts at the beginning of the data set.
+
+    Bubble Sort is the simplest sorting algorithm that sorts the array by comparing two adjacent elements and swaps them if they are in wrong order.
+
+    It compares the first two adjacent elements, and if the first is greater than the second, it swaps them. It continues doing this for each pair of adjacent elements to the end of the data set.
+
+    After each iteration, the greatest value of the array becomes the last index of the array. in each iteration, the comparison happens till the last unsorted element.
+
+    It then starts again with the first two elements, repeating until no swaps have occurred on the last pass.
+
+Time Complexity :-
+    Bubble sort have two loops: an inner loop and an outer loop.
+
+    In the worst-case scenario, the outer loop runs O(n) times.
+    As a result, the worst-case time complexity of bubble sort is O(n x n) = O(n x n) (n2).
+
+    In the best-case scenario, the array is already sorted, but just in case, bubble sort performs O(n) comparisons.
+    As a result, the time complexity of bubble sort in the best-case scenario is O(n).
+
+    Bubble sort may require (n/2) passes and O(n) comparisons for each pass in the average case.
+    As a result, the average case time complexity of bubble sort is O(n/2 x n) = O(n/2 x n) = O(n/2 x n) = O(n/2 x n) = O (n2).
+
+
+Space Complexity of the Bubble Sort Algorithm :-
+    In bubble sort, an extra variable is required for swapping. 
+    As a result, the space complexity of bubble sort is O(1).
+
+    It is an in-place sorting algorithm, which modifies the original array's elements to sort the given array.
