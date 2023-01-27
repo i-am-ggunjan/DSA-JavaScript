@@ -1,0 +1,26 @@
+Sorting :-
+    A sorting algorithm is an algorithm that puts elements of a list in a certain order.
+
+Comparison based sorting :–
+    In comparison based sorting, elements of an array are compared with each other to find the sorted array.
+        1. Bubble sort
+        2. Insertion sort
+        3. Selection sort
+        4. Merge sort
+        5. Heap sort
+        6. Quick sort
+
+Non-comparison based sorting :–
+    In non-comparison based sorting, elements of array are not compared with each other to find the sorted array.
+        1. Radix sort
+        2. Count sort
+        3. Bucket sort
+
+
+In-place/Outplace technique :-
+    A sorting technique is in-place if it does not use any extra memory to sort the array while a sorting technique is out-place if it requires an extra memory to sort the array.
+
+    Among the comparison based techniques discussed, only merge sort is outplaced technique as it requires an extra array to merge the sorted subarrays.
+
+    Among the non-comparison based techniques discussed, all are outplaced techniques.
+    Counting sort uses a counting array and bucket sort uses a hash table for sorting the array.
