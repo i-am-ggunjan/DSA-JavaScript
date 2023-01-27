@@ -1,0 +1,50 @@
+Searching Algorithms :-
+    Searching Algorithms are designed to retrieve an element (or check for an element) from any data structure where it is stored.
+
+Based on the type of search operation, these algorithms are generally classified into two categories :-
+    1. Sequential Search :- In this, the list or array is traversed sequentially and every element is checked.
+    For example: Linear Search.
+
+    2. Interval Search :- These algorithms are specifically designed for searching in sorted data-structures.
+    These type of searching algorithms are much more efficient than Linear Search as they repeatedly target the center of the search structure and divide the search space in half.
+    For Example: Binary Search.
+
+    
+
+Linear Search :- In this, the list or array is traversed sequentially and every element is checked.
+
+Approach for linear search :-
+    Start from the leftmost element of arr[] and compare target element with each element of arr[] one by one.
+    If target element matches with an element of arr[], return the index of target element.
+    If target element doesn’t match with any of the elements, return -1.
+
+Time Complexity for Linear search :-
+    The Best Case occurs when the target element is the first element of the array. The number of comparisons, in this case, is 1. So, the time complexity is O(1).
+
+    The Average Case: On average, the target element will be somewhere in the middle of the array. The number of comparisons, in this case, will be N/2. So, the time complexity will be O(N) (the constant being ignored).
+
+    The Worst Case occurs when the target element is the last element in the array or not in the array. In this case, we have to traverse the entire array, and so the number of comparisons will be N. So, the time complexity will be O(N).
+
+
+
+
+Binary Search :- 
+This type of searching algorithm is used to find the position of a specific value contained in a sorted array.
+We search a sorted array by repeatedly dividing the search interval in half.
+The binary search algorithm works on the principle of divide and conquer and it is considered the best searching algorithm because it's faster to run.
+
+Approach for Binary Search :-
+    First, find the middle element then compare the target with middle element.
+    If the target element is greater than the middle element, then the search continues in the right half.
+    Else if the target element is less than the middle value, the search continues in the left half.
+
+    This process is repeated until the middle element is equal to the target element, or the target element is not in the array.
+    If the target element is found, its index is returned, else -1 is returned.
+
+
+Time Complexity for Binary search :-
+    The Best Case occurs when the target element is the middle element of the array. The number of comparisons, in this case, is 1. So, the time complexity is O(1).
+
+    The Average Case: On average, the target element will be somewhere in the array. So, the time complexity will be O(logN).
+
+    The Worst Case occurs when the target element is not in the list or it is away from the middle element. So, the time complexity will be O(logN).
