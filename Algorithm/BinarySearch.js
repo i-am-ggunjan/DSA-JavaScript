@@ -8,7 +8,7 @@ function binarySearch(arr, target) {
         let middle_index = Math.floor((left_index + right_index) / 2)
 
         if (target === arr[middle_index]) {
-            return console.log(middle_index);;
+            return console.log(middle_index);
         }
         if (target < arr[middle_index]) {
             right_index = middle_index - 1;
@@ -16,12 +16,12 @@ function binarySearch(arr, target) {
             left_index = middle_index + 1;
         }
     }
-    return console.log(-1);;
+    return console.log(-1);
 }
 
-binarySearch([5,-2,20,2,10], 10);
-binarySearch([5,-2,20,2,10], 2);
-binarySearch([5,-2,20,2,10], -20);
-binarySearch([5,-2,20,2,10], 30);
+binarySearch([-20,5,0,5,10,15,60], 10);
+binarySearch([-20,5,0,5,10,15,60], 2);
+binarySearch([-20,5,0,5,10,15,60], -20);
+binarySearch([-20,5,0,5,10,15,60], 30);
 
 
